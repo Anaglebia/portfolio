@@ -1,0 +1,30 @@
+.navbar{
+    background-color: #051933;
+    width: 100%;
+    align-items: center;
+    padding: 30px;
+    
+}
+
+a{
+    gap: 4px;
+    font-size: 1.2rem;
+    font-weight: 600; 
+    color: white;
+    height: 1rem;
+    cursor: pointer;
+    text-shadow: 0.1em 0.1em 0.15em #0000ff;
+    letter-spacing: 0.1rem;
+    
+}
+
+ a:hover{
+color:  #ff007f; 
+text-decoration: underline 0.2rem  ; 
+transition-timing-function: linear;   
+}
+
+ 
+      
+
+  

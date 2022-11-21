@@ -1,0 +1,109 @@
+
+.col-sm {
+  margin: 70px 0px 0px 70px ;
+}
+
+h1 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #1f1670;
+    /* margin-left: 40px; */
+   
+  }
+
+   h3 {
+    font-weight: 800;
+    color:#666666; 
+    
+  }
+  
+  .cubo{
+    outline: 0 !important;
+    animation: pulse 1s infinite alternate;
+  
+  }
+
+  @keyframes pulse {
+    0% {
+      margin-top: 0px;
+    }
+    100% {
+      margin-top: 6px; 
+    } 
+} 
+
+
+p {
+  border-right: solid 3px  hsla(220, 100%, 60%, 1);;
+  white-space: nowrap;
+  overflow: hidden;    
+  font-family: 'Source Code Pro', monospace;  
+  font-size: 28px;
+  font-weight: bold;
+  color: #666666;
+}
+
+/* Animation */
+p {
+  animation: animated-text 4s steps(29,end) 1s 1 normal both,
+             animated-cursor 600ms steps(29,end) infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 472px;}
+}
+
+/* cursor animations  assid*/
+
+@keyframes animated-cursor{
+  from{border-right-color:  hsla(220, 100%, 60%, 1);;}
+  to{border-right-color: transparent;}
+}
+
+
+svg{
+  z-index: 10;
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+.svg {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  left: 1%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  left: 3%; 
+}
+/* @media (min-width: 1100px){
+  .svg{
+    
+  }
+} */
+
+svg{
+
+  color: #1f1670;
+  width: 35px;
+  height: 80px;
+
+}
+ 
+  a {
+    cursor: pointer;
+  }
+   
+
+    svg:hover{
+      color: var(--first-color);
+      transform: translateY(-4px);
+      transition: transform 0.2s;
+      color: #00d9ff;
+    }
+
+  
